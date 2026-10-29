@@ -48,3 +48,62 @@ console.log(typeof unique);    // symbol
 
 //typeof null ka result "object" aata hai. Ye JavaScript ka historical quirk hai, null actual object nahi hai.
 
+
+let a = 10;
+let b = 3;
+
+console.log(a + b);  // 13
+console.log(a - b);  // 7
+console.log(a * b);  // 30
+console.log(a / b);  // 3.333...
+console.log(a % b);  // 1
+console.log(a ** b); // 1000
+
+//% remainder deta hai. Iska use even/odd check karne mein hota hai.
+
+let num = 7;
+
+console.log(num % 2 === 0); // false
+
+//Comparisons:
+
+console.log(5 > 3);    // true
+console.log(5 < 3);    // false
+console.log(5 === 5);  // true
+console.log(5 === "5"); // false
+console.log(5 == "5");  // true
+
+//normally === aur !== use kar. == type conversion kar sakta hai, jiski wajah se tricky outputs aate hain.\
+
+//logical operators:
+
+age = 20;
+let hasId = true;
+
+console.log(age >= 18 && hasId); // true
+console.log(age < 18 || hasId);  // true
+console.log(!hasId);             // false
+
+//&& — dono conditions true honi chahiye.
+
+
+
+//|| — kam se kam ek condition true honi chahiye.
+
+
+
+//! — boolean result ko ulta karta hai.
+
+
+
+let gradeMarks = 72;
+
+if (gradeMarks >= 90) {
+    console.log("Grade A");
+} else if (gradeMarks >= 75) {
+    console.log("Grade B");
+} else if (gradeMarks >= 40) {
+    console.log("Pass");
+} else {
+    console.log("Fail");
+}
